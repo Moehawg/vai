@@ -24,10 +24,8 @@ ACTIVITIES = ['r_set', 'r_spike', 'r-pass', 'r_winpoint',
 
 NUM_ACTIVITIES = 8
 
-ACTIONS = ['blocking', 'digging', 'falling', 'jumping',
-           'moving', 'setting', 'spiking', 'standing',
-           'waiting']
-NUM_ACTIONS = 9
+ACTIONS = ['blocking', 'digging', 'setting', 'spiking', 'None']
+NUM_ACTIONS = 5
 
 
 def volley_read_annotations(path: str) -> Dict[int, Dict[str, Union[int, List[int], np.ndarray]]]:

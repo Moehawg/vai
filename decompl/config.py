@@ -39,7 +39,7 @@ class Config(object):
         self.crop_size = 4, 4 # crop size of roi align
         
         # Activity Action
-        self.num_actions = 9 # number of action categories
+        self.num_actions = 5 # number of action categories
         self.num_activities = 8 # number of activity categories
         self.actions_loss_weight = 1.0 # weight used to balance action loss and activity loss
         self.actions_weights = None

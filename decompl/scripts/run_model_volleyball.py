@@ -18,7 +18,7 @@ cfg.test_only = False
 cfg.train_learning_rate = 1e-4
 cfg.lr_plan = {30:5e-5, 60:2e-5, 90:1e-5}
 cfg.max_epoch = 120
-cfg.actions_weights = [[1., 1., 2., 3., 1., 2., 2., 0.2, 1.]]  
+cfg.actions_weights = [[1., 1., 1.,1., 0.]]  #[[1., 1., 2., 3., 1., 2., 2., 0.2, 1.]]  
 cfg.exp_note = 'Volleyball'
 
 # give checkpoint path or None
