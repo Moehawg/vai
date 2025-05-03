@@ -12,7 +12,7 @@ cfg.train_random_seed = 0 # seed
 
 cfg.use_multi_gpu = False # for nn data parallel
 cfg.device_list = "0,1" # gpu device list
-cfg.test_only = True
+cfg.test_only = False
 
 # optimizer settings
 cfg.train_learning_rate = 1e-4

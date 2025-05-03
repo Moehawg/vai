@@ -68,13 +68,13 @@ class Config(object):
     def init_config(self, need_new_folder: bool=True):
         if self.exp_name is None:
             time_str = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
-            self.exp_name = '[%s]<%s>'%(self.exp_note, time_str)
+            self.exp_name = '[%s]<%s>' % (self.exp_note, time_str)
             
-        self.result_path = 'result/%s'%self.exp_name
-        self.log_path = 'result/%s/log.txt'%self.exp_name
-            
+        self.result_path = 'result/%s' % self.exp_name
+        self.log_path = 'result/%s/log.txt' % self.exp_name
+
         if need_new_folder:
-            os.mkdir(self.result_path)
+            os.makedirs(self.result_path, exist_ok=True)
 
 
 if __name__ == "__main__":
